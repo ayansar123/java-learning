@@ -5,6 +5,10 @@ class Animal {
         this.name = name;
     }
 
+    public Animal() {
+
+    }
+
     void eat() {
         System.out.println(name + " is eating");
     }
@@ -13,6 +17,10 @@ class Animal {
 class Dog extends Animal {
     Dog(String name) {
         super(name);
+    }
+
+    public Dog() {
+        super();
     }
 
     void bark() {
